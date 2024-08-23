@@ -17,6 +17,8 @@ class TextStyles {
     color: ColorsManager.grey,
     fontWeight: FontWeight.normal,
     fontSize: 10.sp,
+
+    
   );
 
   static TextStyle font16WhiteSemiBold = TextStyle(
