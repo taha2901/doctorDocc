@@ -6,10 +6,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppTextFormField extends StatelessWidget {
   final String hintText;
   // final String labelText;
-  // final String? Function(String?)? validator;
+  final String? Function(String?) validator;
   // final TextInputType? keyboardType;
   // final TextInputAction? textInputAction;
-  // final TextEditingController? controller;
+  final TextEditingController? controller;
   // final FocusNode? focusNode;
   // final ValueChanged<String>? onFieldSubmitted;
   // final ValueChanged<String>? onChanged;
@@ -32,12 +32,19 @@ class AppTextFormField extends StatelessWidget {
     this.focusedBorder,
     this.enabledBorder,
     this.hintStyle,
-    this.inputTextStyle, this.backFroundColor,
+    this.inputTextStyle,
+    this.backFroundColor,
+    required this.validator,
+    this.controller,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      validator:  (value){
+        return validator(value);
+      },
       decoration: InputDecoration(
         isDense: true,
         contentPadding: contentPadding ??
@@ -56,10 +63,18 @@ class AppTextFormField extends StatelessWidget {
               borderSide:
                   const BorderSide(color: ColorsManager.lighterGrey, width: 2),
             ),
+        errorBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(16)),
+          borderSide: BorderSide(color: Colors.red, width: 1.3),
+        ),
+        focusedErrorBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(16)),
+          borderSide: BorderSide(color: Colors.red, width: 2),
+        ),
         hintStyle: hintStyle ?? TextStyles.font14LightGreyRegular,
         hintText: hintText,
         suffixIcon: suffixIcon,
-        fillColor: backFroundColor??ColorsManager.moreLightGrey,
+        fillColor: backFroundColor ?? ColorsManager.moreLightGrey,
         filled: true,
       ),
       obscureText: isObscureText ?? false,
