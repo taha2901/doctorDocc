@@ -18,7 +18,7 @@ class SignupScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 30.h),
+          padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 8.h),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,11 +32,11 @@ class SignupScreen extends StatelessWidget {
                   'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
                   style: TextStyles.font14GrayRegular,
                 ),
-                verticalSpace(36),
+                verticalSpace(18),
                 Column(
                   children: [
                     const SignupForm(),
-                    verticalSpace(40),
+                    verticalSpace(24),
                     AppTextButton(
                       buttonText: "Create Account",
                       textStyle: TextStyles.font16WhiteSemiBold,
@@ -44,9 +44,9 @@ class SignupScreen extends StatelessWidget {
                         validateThenDoSignup(context);
                       },
                     ),
-                    verticalSpace(16),
+                    verticalSpace(8),
                     const TermsAndConditionsText(),
-                    verticalSpace(30),
+                    verticalSpace(18),
                     const AlreadyHaveAccountText(),
                     const SignupBlocListener(),
                   ],
