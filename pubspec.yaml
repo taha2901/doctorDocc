@@ -25,6 +25,9 @@ dependencies:
   flutter_native_splash: ^2.4.1
   flutter_svg: ^2.0.10+1
   flutter_screenutil: ^5.9.3
+  build_runner: ^2.4.12
+  dartz: ^0.10.1
+  firebase_core: ^2.24.2
 
 dev_dependencies:
   flutter_test:
