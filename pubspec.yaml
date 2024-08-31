@@ -11,12 +11,16 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   flutter_bloc: ^8.1.6 
+  # freezed : Code generation for immutable classes that has a simple syntax/API without compromising on the features.
   freezed: ^2.5.7
   freezed_annotation: ^2.4.4
   get_it: ^7.7.0
+  # json serializable : Automatically generate code for converting to and from JSON by annotating Dart classes.
   json_serializable: ^6.8.0
+  # json annotation : Classes and helper functions that support JSON code generation via the `json_serializable` package.
   json_annotation: ^4.9.0
   dio: ^5.6.0
+  # retrofit : retrofit.dart is an dio client generator using source_gen and inspired by Chopper and Retrofit.
   retrofit: ^4.2.0
   retrofit_generator: ^8.2.0
   pretty_dio_logger: ^1.4.0
@@ -25,8 +29,8 @@ dependencies:
   flutter_native_splash: ^2.4.1
   flutter_svg: ^2.0.10+1
   flutter_screenutil: ^5.9.3
+  # build runner : build system for dart generated code and modualar comilation
   build_runner: ^2.4.12
-  dartz: ^0.10.1
 
 dev_dependencies:
   flutter_test:
