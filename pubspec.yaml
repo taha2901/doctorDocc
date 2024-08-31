@@ -1,7 +1,7 @@
 name: doc
 description: "A new Flutter project."
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 1.0.0+1
+version: 1.0.1+1
 
 environment:
   sdk: ^3.5.0
@@ -31,7 +31,8 @@ dependencies:
   flutter_screenutil: ^5.9.3
   # build runner : build system for dart generated code and modualar comilation
   build_runner: ^2.4.12
-
+  firebase_core: ^2.24.2
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
