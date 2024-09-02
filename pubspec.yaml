@@ -32,6 +32,7 @@ dependencies:
   # build runner : build system for dart generated code and modualar comilation
   build_runner: ^2.4.12
   firebase_core: ^2.24.2
+  cached_network_image: ^3.4.1
   
 dev_dependencies:
   flutter_test:
