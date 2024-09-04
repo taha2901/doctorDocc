@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:doc/core/helpers/spacing.dart';
 import 'package:doc/core/theming/styles.dart';
 import 'package:doc/features/home/data/models/specializations_response_model.dart';
@@ -18,14 +17,6 @@ class DoctorsListViewItem extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 16.h),
       child: Row(
         children: [
-          // CachedNetworkImage(
-          //   imageUrl: "",
-          //   progressIndicatorBuilder: (context, url, progress) =>
-          //       CircularProgressIndicator(
-          //     value: progress.progress,
-          //   ),
-          //   errorWidget: (context, url, error) => const Icon(Icons.error),
-          // ),
           ClipRRect(
             borderRadius: BorderRadius.circular(12.0),
             child: Image.network(
