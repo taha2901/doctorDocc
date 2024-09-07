@@ -5,7 +5,7 @@ import 'package:doc/features/home/data/apis/home_api_services.dart';
 import 'package:doc/features/home/data/repos/home_repo.dart';
 import 'package:doc/features/home/logic/home_cubit.dart';
 import 'package:doc/features/login/data/repos/login_repo.dart';
-import 'package:doc/features/login/logic/cubit/login_cubit.dart';
+import 'package:doc/features/login/logic/login_cubit.dart';
 import 'package:doc/features/sign_up/data/repo/sign_up_repo.dart';
 import 'package:doc/features/sign_up/logic/cubit/sign_up_cubit.dart';
 import 'package:get_it/get_it.dart';

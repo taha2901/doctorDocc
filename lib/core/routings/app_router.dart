@@ -2,7 +2,7 @@ import 'package:doc/core/di/dependency_injection.dart';
 import 'package:doc/core/routings/routers.dart';
 import 'package:doc/features/home/logic/home_cubit.dart';
 import 'package:doc/features/home/ui/home_screen.dart';
-import 'package:doc/features/login/logic/cubit/login_cubit.dart';
+import 'package:doc/features/login/logic/login_cubit.dart';
 import 'package:doc/features/login/ui/login_screen.dart';
 import 'package:doc/features/on_boarding/on_boarding_screen.dart';
 import 'package:doc/features/sign_up/logic/cubit/sign_up_cubit.dart';

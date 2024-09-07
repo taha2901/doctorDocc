@@ -2,7 +2,7 @@ import 'package:doc/core/helpers/spacing.dart';
 import 'package:doc/core/theming/styles.dart';
 import 'package:doc/core/widgets/app_text_button.dart';
 import 'package:doc/features/login/data/models/login_request_body.dart';
-import 'package:doc/features/login/logic/cubit/login_cubit.dart';
+import 'package:doc/features/login/logic/login_cubit.dart';
 import 'package:doc/features/login/ui/widgets/dont_have_account_text.dart';
 import 'package:doc/features/login/ui/widgets/email_and_password.dart';
 import 'package:doc/features/login/ui/widgets/login_bloc_listenter.dart';
